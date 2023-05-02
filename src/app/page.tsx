@@ -7,19 +7,21 @@ import SingleTitle from "./components/SingleTitle";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen px-10 sm:px-20 relative max-w-[1600px] font-alliance flex flex-col items-center">
+    <main className="w-full h-screen px-6 sm:px-20 relative max-w-[1600px] font-alliance flex flex-col items-center">
       {/* Background layers */}
 
       {/* Main page content */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 w-full border-b-[1px] border-b-white/[0.1]">
         {/* Nav Bar */}
         <div className="h-24 flex items-center hover:opacity-60 duration-200 w-fit hover:cursor-pointer ">
-          <Image
-            src={"/logo.svg"}
-            height={26}
-            width={110}
-            alt={"Govern X Logo"}
-          />
+          <Link href="/">
+            <Image
+              src={"/logo.svg"}
+              height={26}
+              width={110}
+              alt={"Govern X Logo"}
+            />
+          </Link>
         </div>
         <div className="h-24 col-span-1 lg:flex items-center justify-center hidden">
           <div className="">
@@ -37,15 +39,17 @@ export default function Home() {
           </div>
         </div>
         <div className="h-24 hidden items-center justify-end md:flex">
-          <button className="bg-[#EA2A00] hover:bg-[#EA2A00]/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
-            Get in touch
-          </button>
+          <Link href="https://www.linkedin.com/company/govern-x/">
+            <button className="bg-[#EA2A00] hover:bg-[#EA2A00]/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
+              Get in touch
+            </button>
+          </Link>
         </div>
       </div>
 
       {/* Main body */}
       <div className="col-start-1 col-span-3 mt-24 flex justify-center flex-col items-center ">
-        <h1 className=" font-semibold text-center text-[30px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-br from-[#EA2A00] to-[#FF9D7E]">
+        <h1 className=" font-semibold text-center text-[25px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-br from-[#EA2A00] to-[#FF9D7E]">
           AI-Powered Operations and Decision Making
         </h1>
         <p className="my-2 text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-400 max-w-2xl text-center">
@@ -53,6 +57,13 @@ export default function Home() {
           Intelligence to automate internal business, governmental operations,
           and customer engagement.
         </p>
+        <div className="w-full my-5 flex items-center justify-center sm:hidden">
+          <Link href="https://www.linkedin.com/company/govern-x/">
+            <button className="bg-[#EA2A00] hover:bg-[#EA2A00]/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
+              Get in touch
+            </button>
+          </Link>
+        </div>
 
         {/* Main Image */}
         <div className="h-[600px] lg:h-[500px] my-20 lg:my-10 mb-20 w-full flex items-center justify-center">
@@ -122,7 +133,7 @@ export default function Home() {
         </div>
 
         {/* Side of system */}
-        <div className="relative h-[400px] mt-20 mb-20 lg:mb-0 lg:mt-0 lg:h-full w-[470px]">
+        <div className="relative h-[400px] mt-20 mb-20 lg:mb-0 lg:mt-0 lg:h-full w-[360px] sm:w-[470px]">
           <Image
             src={"/sys_diagram.png"}
             alt={"Govern X Logo"}
@@ -266,7 +277,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                   fill="#fff"
-                  className="w-[20px] h-[20px]"
+                  className="w-[14px] h-[14px]"
                   version="1.1"
                   id="Layer_1"
                   viewBox="0 0 308 308"
@@ -292,7 +303,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                   fill="#fff"
-                  className="w-[20px] h-[20px] text-white"
+                  className="w-[14px] h-[14px] text-white"
                   viewBox="0 0 20 20"
                   version="1.1"
                 >

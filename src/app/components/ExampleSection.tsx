@@ -45,11 +45,9 @@ const ExampleSection = ({ title, desc, bullets }: any) => {
     <div className="w-full flex items-center justify-between flex-col lg:flex-row my-40">
       <div className="">
         <h1 className="text-[40px] lg:text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#fa2e00] to-[#ff764c]">
-      {title}
+          {title}
         </h1>
-        <p className="max-w-4xl text-[14px] mr-10">
-          {desc}
-        </p>
+        <p className="max-w-4xl text-[14px] mr-10">{desc}</p>
         <ul className="pl-4 py-5">
           {bullets.map(({ heading, image }: any, index: any) => (
             <li
@@ -67,11 +65,17 @@ const ExampleSection = ({ title, desc, bullets }: any) => {
         </ul>
       </div>
       <div className="shadow-[0px_48px_100px_rgba(250,46,0,0.4)] relative">
-        <Image src="/convos/convo_frame3.png" alt="" height={500} width={800} />
+        <Image
+          priority
+          src="/convos/convo_frame3.png"
+          alt=""
+          height={500}
+          width={800}
+        />
 
         <div
           ref={scrollContainerRef}
-          className="absolute top-[37px] left-0 bottom-[37px] w-full bg-transparent overflow-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-300 "
+          className="absolute top-[22px] bottom-[28px] sm:top-[37px] left-0 sm:bottom-[37px] w-full bg-transparent overflow-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-300 "
         >
           {/* Contents to scroll */}
           <div ref={scrollItemRef} className="relative w-full image-container">

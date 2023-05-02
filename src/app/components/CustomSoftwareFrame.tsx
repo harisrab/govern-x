@@ -70,11 +70,12 @@ const CustomSoftwareFrame = ({ title, desc, bullets }: any) => {
           alt=""
           height={500}
           width={800}
+          priority
         />
 
         <div
           ref={scrollContainerRef}
-          className="absolute top-[37px] px-3 left-0 bottom-[55px] w-full bg-transparent overflow-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-300 "
+          className="absolute top-[22px] bottom-[32px] sm:top-[37px] px-3 left-0 sm:bottom-[55px] w-full bg-transparent overflow-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-300 "
         >
           {/* Contents to scroll */}
           <div

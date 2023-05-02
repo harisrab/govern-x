@@ -1,6 +1,6 @@
 const Block = ({ heading, firstLine, secondLine, thirdLine }: any) => {
   return (
-    <div className="flex flex-col justify-start hover:border-white/[0.1] min-w-[400px] h-[350px] flex-1 bg-[#fff]/[0.04] hover:bg-[#B3B3B3]-600/[0.3] duration-200 p-6">
+    <div className="flex flex-col justify-start hover:border-white/[0.1] min-w-full sm:min-w-[400px] h-[350px] flex-1 bg-[#fff]/[0.04] hover:bg-[#B3B3B3]-600/[0.3] duration-200 p-6">
       <h1 className="mb-4 text-[18px]">{heading}</h1>
       <div className="">
         <div className="mb-3">
