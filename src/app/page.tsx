@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
+
 import BlocksSet from "./components/BlocksSet";
 import CustomSoftwareFrame from "./components/CustomSoftwareFrame";
 import ExampleSection from "./components/ExampleSection";
@@ -7,85 +10,108 @@ import SingleTitle from "./components/SingleTitle";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen px-6 sm:px-20 relative max-w-[1600px] font-alliance flex flex-col items-center">
+    <main className="w-full h-screen selection:text-blue-200 selection:bg-blue-600/[0.1] relative bg-black max-w-[1600px] font-alliance flex flex-col items-center">
       {/* Background layers */}
 
       {/* Main page content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 w-full border-b-[1px] border-b-white/[0.1]">
-        {/* Nav Bar */}
-        <div className="h-24 flex items-center hover:opacity-60 duration-200 w-fit hover:cursor-pointer ">
-          <Link href="/">
-            <Image
-              src={"/logo.svg"}
-              height={26}
-              width={110}
-              alt={"Govern X Logo"}
-            />
-          </Link>
-        </div>
-        <div className="h-24 col-span-1 lg:flex items-center justify-center hidden">
-          <div className="">
-            <ul className="flex bg-white/[0.1] text-[15px] p-1 rounded-full">
-              <li className="hover:bg-white/[0.2] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
-                Vision
-              </li>
-              <li className="hover:bg-white/[0.2] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
-                Offerings
-              </li>
-              <li className="hover:bg-white/[0.2] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
-                Blog
-              </li>
-            </ul>
+      <div className="w-full px-6 sm:px-20">
+        <div className="flex items-center justify-between gap-0 w-full border-b-[1px] border-b-white/[0.1]">
+          {/* Nav Bar */}
+          <div className="h-24 flex items-center hover:opacity-60 duration-200 w-fit hover:cursor-pointer ">
+            <Link href="/">
+              <Image
+                src={"/logo.svg"}
+                height={26}
+                width={110}
+                alt={"Govern X Logo"}
+              />
+            </Link>
           </div>
-        </div>
-        <div className="h-24 hidden items-center justify-end md:flex">
-          <Link href="https://www.linkedin.com/company/govern-x/">
-            <button className="bg-[#EA2A00] hover:bg-[#EA2A00]/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
-              Get in touch
-            </button>
-          </Link>
+
+          <div className="h-24 col-span-1 lg:flex items-center justify-center hidden">
+            <div className="">
+              <ul className="flex bg-white/[0.1] text-[15px] p-1 rounded-full">
+                <li className="hover:bg-white/[0.2] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
+                  Vision
+                </li>
+                <li className="hover:bg-white/[0.2] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
+                  Offerings
+                </li>
+                <li className="hover:bg-white/[0.2] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
+                  Blog
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="h-24 items-center justify-end flex">
+            <Link href="https://www.linkedin.com/company/govern-x/">
+              <button className="bg-blue-500 hover:bg-blue-500/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
+                Get in touch
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 
       {/* Main body */}
-      <div className="col-start-1 col-span-3 mt-24 flex justify-center flex-col items-center ">
-        <h1 className=" font-semibold text-center text-[25px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-br from-[#EA2A00] to-[#FF9D7E]">
-          AI-Powered Operations and Decision Making
-        </h1>
-        <p className="my-2 text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-400 max-w-2xl text-center">
-          We’re building an AI platform that uses state of the art Artificial
-          Intelligence to automate internal business, governmental operations,
-          and customer engagement.
-        </p>
-        <div className="w-full my-5 flex items-center justify-center sm:hidden">
-          <Link href="https://www.linkedin.com/company/govern-x/">
-            <button className="bg-[#EA2A00] hover:bg-[#EA2A00]/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
-              Get in touch
-            </button>
-          </Link>
+      <div className="mt-24 flex justify-center flex-col lg:flex-row items-center w-full selection:text-blue-200 selection:bg-blue-600/[0.1]">
+        <div className="mb-[20px] w-full pl-6 sm:pl-20">
+          <h1 className="w-full font-semibold text-[25px]  lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-300">
+            AI-Powered Operations
+          </h1>
+          <div className="w-full">
+            <p className="w-full font-semibold text-[20px] h-14 lg:text-[25px] text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-500">
+              <Typewriter
+                words={[
+                  "Shift nurse Xiāng from Ward A to Emergency",
+                  "Generate a patient satisfaction report for last month.",
+                  "Reserve a conference room for the staff meeting on Friday.",
+                  "Compile a list of patients due for follow-up appointments.",
+                  "Analyze patient wait times in the emergency department.",
+                ]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={50}
+                deleteSpeed={10}
+                delaySpeed={1000}
+              />
+            </p>
+            <p className="w-full max-x-3xl my-2 text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-400 max-w-2xl">
+              We’re building an AI platform that uses state of the art
+              Artificial Intelligence to automate internal business,
+              governmental operations, and customer engagement.
+            </p>
+
+            <ul className="mt-10">
+              <li className="text-[18px] pl-10 text-white/[0.6] hover:cursor-pointer hover:text-white duration-200 w-fit">
+                Sandboxed and secure GPTs
+                <span className="text-[24px] ml-4">↗</span>
+              </li>
+              <li className="text-[18px] pl-10 text-white/[0.6] hover:cursor-pointer hover:text-white duration-200 w-fit">
+                Customizable workflows
+                <span className="text-[24px] ml-4">↗</span>
+              </li>
+              <li className="text-[18px] pl-10 text-white/[0.6] hover:cursor-pointer hover:text-white duration-200 w-fit">
+                Secure, Compliant, and Auditable
+                <span className="text-[24px] ml-4">↗</span>
+              </li>
+              <li className="text-[18px] pl-10 text-white/[0.6] hover:cursor-pointer hover:text-white duration-200 w-fit">
+                Fully upgradable
+                <span className="text-[24px] ml-4">↗</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         {/* Main Image */}
-        <div className="h-[600px] lg:h-[500px] my-20 lg:my-10 mb-20 w-full flex items-center justify-center">
-          <div className="w-full h-full hidden lg:block relative">
+        <div className="h-[500px] w-[400px] lg:w-[1000px] lg:h-[540px] sm:my-20 lg:my-10 mb-20 flex items-center justify-center">
+          <div className="w-full h-full relative">
             <Image
               quality={100}
               priority
-              src={"/hero_img_otint_full.png"}
-              alt={"Govern X Logo"}
-              fill
-              style={{
-                objectFit: "contain",
-                objectPosition: "center",
-                scale: 1.2,
-              }}
-            />
-          </div>
-          <div className="w-full h-full relative block lg:hidden">
-            <Image
-              quality={100}
-              priority
-              src={"/hero_mobile_view.png"}
+              src={"/chat.png"}
               alt={"Govern X Logo"}
               fill
               style={{
@@ -98,7 +124,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 mt-40 px-6 sm:px-20 ">
         {/* 6 Feature Cards */}
         <div className="col-span-3 flex items-center justify-between flex-wrap mb-20">
           <BlocksSet />
@@ -106,7 +132,7 @@ export default function Home() {
       </div>
 
       {/* System breakdown */}
-      <div className="w-full flex items-center justify-between flex-col lg:flex-row lg:h-[800px]">
+      <div className="w-full flex items-center justify-between flex-col lg:flex-row lg:h-[800px] px-6 sm:px-20 ">
         {/* Headings */}
         <div>
           {/* First */}
@@ -133,7 +159,7 @@ export default function Home() {
         </div>
 
         {/* Side of system */}
-        <div className="relative h-[400px] mt-20 mb-20 lg:mb-0 lg:mt-0 lg:h-full w-[360px] sm:w-[470px]">
+        <div className="relative h-[400px] mt-20 mb-20 lg:mb-0 lg:mt-0 lg:h-full w-[360px] sm:w-[470px] ">
           <Image
             src={"/sys_diagram.png"}
             alt={"Govern X Logo"}
@@ -267,7 +293,7 @@ export default function Home() {
         ]}
       />
 
-      <footer className="w-full h-[50px] mt-20 border-t-[1px] border-t-white/[0.1] flex items-center justify-between py-10">
+      <footer className="w-full h-[50px] mt-20 border-t-[1px] border-t-white/[0.1] flex items-center justify-between py-10 px-6 sm:px-20">
         <div>Govern X © 2023. All rights reserved.</div>
         <div>
           <ul className="flex items-center gap-4">
