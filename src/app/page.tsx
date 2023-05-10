@@ -56,8 +56,8 @@ export default function Home() {
       {/* Main body */}
       <div className="mt-24 flex justify-center flex-col lg:flex-row items-center w-full selection:text-blue-200 selection:bg-blue-600/[0.1]">
         <div className="mb-[20px] w-full pl-6 sm:pl-20">
-          <h1 className="w-full font-semibold text-[25px]  lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-300">
-            AI-Powered Operations
+          <h1 className="w-full font-semibold text-[25px]  lg:text-[40px] text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-300">
+            AI Agents for Enterprise Operations
           </h1>
           <div className="w-full">
             <p className="w-full font-semibold text-[20px] h-14 lg:text-[25px] text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-500">
@@ -106,12 +106,12 @@ export default function Home() {
         </div>
 
         {/* Main Image */}
-        <div className="h-[500px] w-[400px] lg:w-[1000px] lg:h-[540px] sm:my-20 lg:my-10 mb-20 flex items-center justify-center">
+        <div className="h-[500px] w-[400px] lg:w-[1100px] lg:h-[640px] sm:my-20 lg:my-10 my-20 flex items-center justify-center">
           <div className="w-full h-full relative">
             <Image
               quality={100}
               priority
-              src={"/chat.png"}
+              src={"/mobile2.png"}
               alt={"Govern X Logo"}
               fill
               style={{
