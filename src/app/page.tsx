@@ -78,9 +78,9 @@ export default function Home() {
               />
             </p>
             <p className="w-full max-x-3xl my-2 text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-400 max-w-2xl">
-              We’re building an AI platform that uses state of the art
-              Artificial Intelligence to automate internal business,
-              governmental operations, and customer engagement.
+              Our AI Agents are trained to perform in a high data security
+              environment, with access to your tools, diverse data sources for
+              optimizing dynamic business workflows.
             </p>
 
             <ul className="mt-10">
@@ -102,7 +102,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
         </div>
 
         {/* Main Image */}
