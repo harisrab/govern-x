@@ -26,7 +26,7 @@ const DeeperLook = () => {
         <SingleTitle
           title={"Source-citations and truthfulness"}
           desc={
-            "Hospital administration can use this system to streamline many operations such as instant information retrieval and updating vast records, helping care-givers to be fast and more productive with time. "
+            "We ensure that LLMs remain truthful by providing source-citations for every piece of information that is generated. This helps in building trust with end-users who can always reference critical information such as research papers, books, and other verified sources."
           }
         />
       </div>
