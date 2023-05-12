@@ -115,7 +115,7 @@ const SystemSection = () => {
   return (
     <div className="w-full  px-10 sm:px-20 my-20">
       <span className="uppercase tracking-[3px] text-[12px] font-light  text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
-        Govern Corp's AI Operations Platform
+        Govern Corp&apos;s AI Operations Platform
       </span>
       <h1 className="w-full max-w-[500px] mt-2 font-semibold text-[20px] sm:text-[25px]  lg:text-[30px] text-transparent bg-clip-text bg-gradient-to-br from-[#006BFF] to-blue-300">
         Build and Deploy Generative AI Agents for Your Enterprise Ops
