@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import SingleTitle from "./components/SingleTitle";
 import HeroSection from "./components/homepage/HeroSection";
 import SystemSection from "./components/homepage/SystemSection";
+import KnowledgeBase from "./components/homepage/KnowledgeBase";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
 
       {/* System Diagram and Product Explaination */}
       <SystemSection />
+
+      {/* Knowledge Base Section */}
+      <KnowledgeBase />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 mt-40 px-6 sm:px-20 ">
         {/* 6 Feature Cards */}
