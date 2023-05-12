@@ -48,6 +48,7 @@ const DeeperLook = () => {
             alt="hydra_detail"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
         <div className="w-[450px] h-[450px]">
@@ -56,6 +57,7 @@ const DeeperLook = () => {
             alt="hydra_detail"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
         <div className="w-[450px] h-[450px]">
@@ -64,6 +66,7 @@ const DeeperLook = () => {
             alt="hydra_detail"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
         <div className="w-[450px] h-[450px]">
@@ -72,6 +75,7 @@ const DeeperLook = () => {
             alt="hydra_detail"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
       </Carousel>
