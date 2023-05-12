@@ -123,9 +123,7 @@ const SystemSection = () => {
 
       <ul className="flex my-10 gap-8 items-center text-[14px] flex-wrap">
         {tabs.map(({ title }, index) => (
-          <button 
-          key={index}
-          onClick={() => setSelectedTab(index)}>
+          <button key={index} onClick={() => setSelectedTab(index)}>
             <li
               className={` px-5 py-1 rounded-full duration-150 ${
                 selectedTab === index
@@ -143,16 +141,19 @@ const SystemSection = () => {
       <div className="flex items-center justify-between gap-20 flex-col lg:flex-row">
         {/* Info side */}
         <ul className="flex flex-col lg:min-h-[600px] lg:justify-center">
-          {tabs[selectedTab]["details"]?.map(({ title, description }, index) => (
-            <li 
-            key={index}
-            className="border-b-[1px] border-b-white/[0.1] py-10 last:border-b-white/[0.0] last:border-b-[1px]">
-              <h1 className="font-light text-[18px]">{title}</h1>
-              <p className="text-white/[0.6] max-w-[500px] text-[14px] mt-2">
-                {description}
-              </p>
-            </li>
-          ))}
+          {tabs[selectedTab]["details"]?.map(
+            ({ title, description }, index) => (
+              <li
+                key={index}
+                className="border-b-[1px] border-b-white/[0.1] py-10 last:border-b-white/[0.0] last:border-b-[1px]"
+              >
+                <h1 className="font-light text-[18px]">{title}</h1>
+                <p className="text-white/[0.6] max-w-[500px] text-[14px] mt-2">
+                  {description}
+                </p>
+              </li>
+            )
+          )}
         </ul>
 
         {/* Holder for the dynamic image */}
@@ -168,6 +169,7 @@ const SystemSection = () => {
             alt="l1"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
 
           {/* Fine Tuning */}
@@ -181,6 +183,7 @@ const SystemSection = () => {
             alt="l1"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
 
           {/* Data stores */}
@@ -194,6 +197,7 @@ const SystemSection = () => {
             alt="l1"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
 
           {/* Security */}
@@ -207,6 +211,7 @@ const SystemSection = () => {
             alt="l1"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
 
           {/* Chat */}
@@ -220,6 +225,7 @@ const SystemSection = () => {
             alt="l1"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
       </div>
