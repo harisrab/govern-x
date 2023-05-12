@@ -3,7 +3,10 @@ import Image from "next/image";
 const Hydra = () => {
   return (
     <div className="w-full  px-10 sm:px-20 my-20 flex flex-col items-center">
-      <h1 className="w-full text-center mt-2 font-semibold text-[35px] sm:text-[45px]  lg:text-[45px] text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400">
+      <h1
+        id="#hydra"
+        className="w-full text-center mt-2 font-semibold text-[35px] sm:text-[45px]  lg:text-[45px] text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400"
+      >
         Hydra
       </h1>
 
