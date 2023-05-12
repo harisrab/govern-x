@@ -4,13 +4,13 @@ const KnowledgeBase = () => {
   return (
     <div className="w-full  px-10 sm:px-20 my-20">
       <span className="uppercase tracking-[3px] text-[12px] font-light  text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
-        Govern Corp's AI Operations Platform
+        Govern Corp&apos;s AI Operations Platform
       </span>
       <h1 className="w-full max-w-[500px] mt-2 font-semibold text-[20px] sm:text-[25px]  lg:text-[30px] text-transparent bg-clip-text bg-gradient-to-br from-[#006BFF] to-blue-300">
-        Build Your Private Long Term Memory so It’s Chat Accessible
+        Build Your Private Long Term Memory so It&apos;s Chat Accessible
       </h1>
 
-      <ul className="flex items-center justify-between flex-wrap mt-20 gap-10">
+      <ul className="flex items-center justify-between flex-wrap mt-20 gap-10 gap-x-2">
         <li className="">
           <div className="p-[1px] flex items-center justify-center bg-gradient-to-br from-white/[0.2] rounded-[5px] to-white/[0.08] w-fit">
             <div className="w-[300px] h-[250px] rounded-[5px] bg-[#090909] flex flex-col p-4">

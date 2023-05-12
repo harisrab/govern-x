@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between gap-0 w-full border-b-[1px] border-b-white/[0.1]">
+    <div className="flex items-center justify-between gap-0 w-full border-b-[1px] border-b-white/[0.05]">
       {/* Nav Bar */}
       <div className="h-24 flex items-center hover:opacity-60 duration-200 w-fit hover:cursor-pointer ">
         <Link href="/">
