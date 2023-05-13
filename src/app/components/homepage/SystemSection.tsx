@@ -34,7 +34,7 @@ const SystemSection = () => {
       title: "Base model",
       details: [
         {
-          title: "Use Commercial, open-source, or homegrown LLMs",
+          title: "Use commercial, open-source, or homegrown LLMs",
           description:
             "Generative AI is evolving fast and Large Language Models are being released at unprecedented rate. We’re keeping our platform fully updated with a plethora of models for you to choose from.",
         },
