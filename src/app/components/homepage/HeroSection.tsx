@@ -59,7 +59,7 @@ const HeroSection = () => {
           <Image
             quality={100}
             priority
-            src={"/mobile2.png"}
+            src={"/mainFrame.png"}
             alt={"Govern X Logo"}
             fill
             style={{
