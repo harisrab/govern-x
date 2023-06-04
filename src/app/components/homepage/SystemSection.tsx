@@ -145,7 +145,7 @@ const SystemSection = () => {
             ({ title, description }, index) => (
               <li
                 key={index}
-                className="border-b-[1px] border-b-white/[0.1] py-10 last:border-b-white/[0.0] last:border-b-[1px]"
+                className="border-b-[1px] border-b-white/[0.1] border-dashed py-10 last:border-b-white/[0.0] last:border-b-[1px]"
               >
                 <h1 className="font-light text-[18px]">{title}</h1>
                 <p className="text-white/[0.6] max-w-[500px] text-[14px] mt-2">

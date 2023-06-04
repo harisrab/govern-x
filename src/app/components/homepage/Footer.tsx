@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full px-6 sm:px-20">
-      <div className="w-full h-[50px] mt-20 border-t-[1px] border-t-white/[0.05] flex items-center justify-between py-10   ">
+      <div className="w-full h-[50px] mt-20 border-t-[1px] border-t-white/[0.05] border-dashed flex items-center justify-between py-10   ">
         <p className="text-[10px] font-alliance uppercase tracking-[3px] text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400">
           Govern X © 2023. All rights reserved.
         </p>
@@ -52,7 +52,7 @@ const Footer = () => {
                     stroke="none"
                     stroke-width="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g
                       id="Dribbble-Light-Preview"

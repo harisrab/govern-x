@@ -5,8 +5,8 @@ const HeroSection = () => {
   return (
     <div className="mt-24 flex justify-center flex-col lg:flex-row items-center w-full selection:text-blue-200 selection:bg-blue-600/[0.1]">
       <div className="mb-[20px] w-full pl-6 sm:pl-20">
-        <h1 className="w-full font-semibold text-[25px]  lg:text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#006BFF] to-[#BED9FF]">
-          AI Agents for Enterprise Operations
+        <h1 className="w-full font-semibold text-[25px]  lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-[#f9f9f9] to-[#7d7d7d]">
+          AI-Powered Enterprise Operations
         </h1>
         <div className="w-full">
           <p className="w-full font-semibold text-[20px] h-14 lg:text-[25px] text-transparent bg-clip-text bg-gradient-to-br from-gray-100 to-gray-500">
