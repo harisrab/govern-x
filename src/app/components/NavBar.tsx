@@ -19,15 +19,14 @@ const NavBar = () => {
       <div className="h-24 col-span-1 lg:flex items-center justify-center hidden">
         <div className="">
           <ul className="flex bg-white/[0.02] text-[15px] p-1 rounded-full">
-            <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
+            {/* <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
               Vision
-            </li>
-            <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
-              Offerings
-            </li>
-            <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
-              Blog
-            </li>
+            </li> */}
+            <Link href="https://governcorplimited.mintlify.app/release-notes">
+              <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
+                Changelog
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
