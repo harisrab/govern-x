@@ -22,7 +22,7 @@ const NavBar = () => {
             {/* <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
               Vision
             </li> */}
-            <Link href="https://governcorplimited.mintlify.app/release-notes">
+            <Link href="https://docs.governcorp.com/release-notes">
               <li className="hover:bg-white/[0.05] hover:cursor-pointer bg-white/[0.0] duration-150 rounded-full px-4 py-2 h-full">
                 Changelog
               </li>
