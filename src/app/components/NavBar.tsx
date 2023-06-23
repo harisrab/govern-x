@@ -31,9 +31,23 @@ const NavBar = () => {
         </div>
       </div>
       <div className="h-24 items-center justify-end flex">
-        <Link href="https://www.linkedin.com/company/govern-x/">
-          <button className="bg-blue-500 hover:bg-blue-500/[0.6] duration-200 px-4 py-2 rounded-full text-[15px]">
-            Get in touch
+        <Link href="https://app.governcorp.com">
+          <button className="bg-white flex gap-2 hover:bg-white/[0.9] duration-200 text-black font-light mb-0 items-center px-4 py-2 rounded-full text-[15px]">
+            <p className="flex items-center -mb-[2px]">Get started</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-4 h-4 text-black"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
           </button>
         </Link>
       </div>
