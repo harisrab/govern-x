@@ -72,8 +72,7 @@ const allianceFont = localFont({
   ],
 });
 export const metadata = {
-  title:
-    "Govern X - Advanced Chatbots for Data-Driven Decision Making",
+  title: "Govern X - Advanced Chatbots for Data-Driven Decision Making",
   description:
     "Govern X specializes in building advanced chatbots that revolutionize data and decision making within states, organizations, companies, and customer interactions.",
   keywords:
@@ -90,11 +89,15 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content={metadata.keywords} />
-        <meta name="facebook-domain-verification" content="0tzx3xkxtnbatoo3ng5rx3tehyvn3b" />
+        <meta
+          name="facebook-domain-verification"
+          content="0tzx3xkxtnbatoo3ng5rx3tehyvn3b"
+        />
         <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="flex flex-col items-center">{children}</body>
+
+      <body className="flex flex-col items-center text-white">{children}</body>
     </html>
   );
 }

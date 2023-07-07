@@ -7,6 +7,12 @@
   position: relative;
 }
 
+@layer base{
+    body {
+        @apply dark:bg-gray-800 bg-white
+    }
+}
+
 /* .auto-scroll-image {
   width: 100%;
   object-fit: contain;
